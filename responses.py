@@ -8,7 +8,9 @@ def get_response(user_input: str) -> str:
     if lowered == '':
         return "You're awfully quiet maGuyz!"
     elif 'niaje' in lowered:
-        return 'Fiti, mambo iko poa!'
+        return 'Fiti, mambo iko poa?'
+    elif 'la! hasha' in lowered:
+        return 'Ni nini mbaya?'
     elif 'roll dice' in lowered:
         return f'You rolled: {randint(1, 6)}'
     else:

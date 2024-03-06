@@ -20,7 +20,7 @@ client: Client = Client(intents=intents)
 async def send_message(message: Message, user_message: str) -> None:
     if not user_message:
         print('(Message was empty because intents were not enabled properly)')
-        print('------------------------------------------------------------')
+        print('-------------------------------------------------------------')
 
     
     if is_private := user_message[0] == '?': ##### tiggers the private messaging
@@ -28,7 +28,7 @@ async def send_message(message: Message, user_message: str) -> None:
 
     try:
         response: str = get_response(user_message)
-        await message.author.send(response) if is_private else message.channel.send(response)
+        await message.author.send(response) if is_private else await message.channel.send(response)
     except Exception as e:
         print(e)
 
