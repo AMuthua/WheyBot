@@ -27,4 +27,4 @@ This project is a simple Discord bot that responds to user messages. It uses the
 - Implement additional features like commands, user management, and more.
 - Enhance error handling and logging mechanisms.
 
-Enjoy using and expanding your Discord bot!
+Enjoy using and expanding my Discord bot!
